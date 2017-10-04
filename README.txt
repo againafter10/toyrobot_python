@@ -12,7 +12,7 @@ Usage
 
 execute the main.py python script from the command line as follows:
 
-python main.py
+   python main.py
 
 To exit the application while in command mode at any time simply leave the input blank and hit 'Enter'.
 
@@ -26,10 +26,8 @@ A text file can also be used as an input for a series of instructions with each 
 
 execute the main.py python script specifying the absolute path of the input file from the command line as follows:
 
-%>python main.py -i LOCATION_OF_FILE
+  python main.py -i LOCATION_OF_FILE
 
 
-To display the help/usage for the script, run the script as follows:
 
-%>python main.py -h
 
