@@ -1,7 +1,7 @@
 
 # -------------------------------------------------------------------------
 #  DATE:  October 4, 2017
-#
+#  @Archana Joshi
 #  Toy Robot Simulator - Version: 1.0
 #  This application is a simulation of a toy robot moving on a square tabletop,of dimensions 5 units x 5 units.
 #  There are no other obstructions on the table surface and the robot is free to roam around the surface of the table.
