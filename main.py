@@ -38,7 +38,7 @@ def with_input_file(input_file):
                 finally:
                     line_count += 1
     except IOError:
-        print "No file found '%s' found. Ensure it exists and is readable." % input_file
+        print "No file found  with name '%s'." % input_file
 
 
 def no_input_file():
@@ -50,7 +50,7 @@ def no_input_file():
     table.print_usage('usage_file')  # dispaly usage of the application
     prompt = ''
     while prompt not in ('Y', 'y'):
-        prompt = raw_input("Are you ready for the commands(Y/N)? ")
+        prompt = raw_input("Are you ready for the commands(Y(y)/N(n))? ")
 
     while True:
         input = raw_input('New Command: ')
