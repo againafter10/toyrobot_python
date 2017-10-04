@@ -1,9 +1,9 @@
 #######################
 
 Toy Robot Simulator - Version: 1.0
-This is a command line Python application that simulates a robot on a specifiable grid
-
-@Author - Archana Joshi (4/10/2017)
+This application is a simulation of a toy robot moving on a square tabletop,of dimensions 5 units x 5 units.
+There are no other obstructions on the table surface and the robot is free to roam around the surface of the table.
+The robot however must be prevented from falling off the table boundary.
 
 #######################
 
