@@ -6,7 +6,7 @@ Value => Tuple containing valid left and right directions for corresponding key
  [0] => current  x,y co-ordinates then return the NEW x,y co-ordinates according to the robot's move
  [1] => New direction after turning LEFT
  [2] => New direction after turning RIGHT
-
+@Archana Joshi
 """
 pos_directions = {'NORTH' : (lambda x, y: (x, y + 1), "WEST", "EAST"),
                     'EAST' : (lambda x, y: (x + 1, y), "NORTH", "SOUTH"),
