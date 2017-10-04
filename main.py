@@ -1,16 +1,12 @@
 """"
 Created on 04/10/2017
 Toy Robot Simulator
-
 This application is a simulation of a toy robot moving on a square tabletop,of dimensions 5 units x 5 units.
-
 There are no other obstructions on the table surface and the robot is free to roam around the surface of the table.
 The robot however must be prevented from falling off the table boundary.
-
 @summary: Toy Robot Simulator
 @author: Archana Joshi
 @version: 1.0
-
 """
 
 from simulate import Tabletop
@@ -22,7 +18,7 @@ def with_input_file(input_file):
     Runs commands from a specified input file.
     """
 
-    table = Tabletop() #Initiate to a 5X5 tabletop object.
+    table = Tabletop()  # Initiate to a 5X5 tabletop object.
     try:
         with open(input_file, 'r') as readfile:
             line_count = 1
@@ -44,17 +40,17 @@ def with_input_file(input_file):
     except IOError:
         print "No file found '%s' found. Ensure it exists and is readable." % input_file
 
+
 def no_input_file():
     """
     Run the application without an input file - Displays command prompt
     """
 
-    table = Tabletop() #Initiate to a 5X5 tabletop object.
-    table.print_usage('usage_file')  #dispaly usage of the application
+    table = Tabletop()  # Initiate to a 5X5 tabletop object.
+    table.print_usage('usage_file')  # dispaly usage of the application
     prompt = ''
-    while prompt not in ('Y','y'):
+    while prompt not in ('Y', 'y'):
         prompt = raw_input("Are you ready for the commands(Y/N)? ")
-
 
     while True:
         input = raw_input('New Command: ')
@@ -63,7 +59,7 @@ def no_input_file():
         try:
             try:
                 command = input[0]
-                args =  input[1].split(",")
+                args = input[1].split(",")
             except IndexError:
                 command = input[0]
                 args = ()
@@ -72,10 +68,11 @@ def no_input_file():
         except (AttributeError, TypeError):
             print 'Invalid Command!'
 
+
 def main():
     """
     Main function
-    
+
     Parses and collects optional command line arguments (Such as the command input file)
     then executes the application as per commands given
     """
