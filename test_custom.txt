@@ -5,6 +5,8 @@ LEFT
 MOVE
 RIGHT
 RIGHT
+Place
+left
 MOVE
 MOVE
 MOVE
