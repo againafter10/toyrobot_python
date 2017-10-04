@@ -1,0 +1,24 @@
+========================================================
+The valid commands are :
+
+ 1- PLACE X,Y,F  => place in position X,Y and facing NORTH,SOUTH, EAST or WEST.
+ 2- MOVE => move the toy robot one unit forward in the direction it is currently facing
+ 3- LEFT => rotate the toy robot 90 degrees to left direction.
+ 4- RIGHT => rotate the toy robot 90 degrees to right direction.
+ 5- REPORT => announce the position of the toy robot
+
+Example:
+ INPUT: PLACE 1,2,EAST
+        MOVE
+        MOVE
+        LEFT
+        MOVE
+        REPORT
+
+ Output: 3,3,NORTH
+
+* The first valid command to the robot is a PLACE command, after that, any sequence of commands may be issued.
+* Any move that would cause the robot to fall must be ignored.
+
+
+========================================================

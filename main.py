@@ -1,5 +1,11 @@
 """"
 Created on 04/10/2017
+Toy Robot Simulator
+
+This application is a simulation of a toy robot moving on a square tabletop,of dimensions 5 units x 5 units.
+
+There are no other obstructions on the table surface and the robot is free to roam around the surface of the table.
+The robot however must be prevented from falling off the table boundary.
 
 @summary: Toy Robot Simulator for DealMax
 @author: Archana Joshi
@@ -43,21 +49,23 @@ def no_input_file():
     """
 
     table = Tabletop() #Initiate to a 5X5 tabletop object.
-    #table.print_usage()  //dispaly usage of the application
+    table.print_usage('usage_file')  #dispaly usage of the application
+    """
     print "================================================="
     print "Enter commands as PLACE(...),RIGHT,LEFT,MOVE,REPORT"
     print "PLACE command with arguments (PLACE x,y,f) "
     print "the following commands: RIGHT, LEFT, REPORT, MOVE."
     print "Press enter to exit. Otherwise begin by using the"
     print "================================================="
-    
+    """
     while True:
         input = raw_input('Command: ')
         if not input: raise SystemExit
         input = input.split(' ')
         try:
             try:
-                command, args = input[0], input[1].split(",")
+                command = input[0]
+                args =  input[1].split(",")
             except IndexError:
                 command = input[0]
                 args = ()

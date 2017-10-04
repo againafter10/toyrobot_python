@@ -78,6 +78,19 @@ class Tabletop(object):
 
         self.x_limit = x_limit
         self.y_limit = y_limit
+
+    def print_usage(self,helpfile):
+        """
+
+        Prints usage/help for the application
+        :param readfile: file which has usage information
+        :return: None
+        """
+        with open(helpfile, 'r') as readfile:
+           help_content = readfile.read()
+           print help_content
+
+
     
     def _valid_move(self,x,y):
         """
