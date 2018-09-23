@@ -5,7 +5,6 @@ This application is a simulation of a toy robot moving on a square tabletop,of d
 There are no other obstructions on the table surface and the robot is free to roam around the surface of the table.
 The robot however must be prevented from falling off the table boundary.
 @summary: Toy Robot Simulator
-@author: Archana Joshi
 @version: 1.0
 """
 
